@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Cambio</title>
+
+</head>
+
+<body>
+    <img src="./my-dolar.gif">
+    <h1>Meu Cambio</h1>
+    <div>
+        <input id="input-real" type="number" placeholder="Valor em Reais">
+        <input id="input-dolar" placeholder="Valor do Dolar">
+        <p id="dolares">$ 0</p>
+        <button onclick="calcularDolar()">Converter</button>
+    </div>
+
+</body>
+
+<style>
+    body {
+        text-align: center;
+        background-color: #323232;
+    }
+
+    img {
+        width: 60%;
+    }
+
+    h1 {
+        color: white;
+        font-size: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    input {
+        width: 140px;
+        height: 30px;
+    }
+
+    #input-real {
+        border: 3px solid aqua;
+        border-radius: 10px;
+    }
+
+    #input-dolar {
+        border: 3px solid aqua;
+        border-radius: 10px;
+    }
+
+    p {
+        font-weight: bold;
+        font-size: 25px;
+        color: aqua;
+    }
+
+    button {
+        height: 40px;
+        width: 140px;
+        font-size: 15px;
+        cursor: pointer;
+        border: 3px solid aqua;
+        border-radius: 10px;
+        background-color: #cfff00;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    button:hover {
+        color: white;
+        background-color: black;
+    }
+</style>
+
+<script>
+
+    function calcularDolar() {
+        let real = document.getElementById("input-real").value
+        let dolar = document.getElementById("input-dolar").value
+        let resultado = real / dolar
+        dolares.innerHTML='$'+resultado
+        alert('O resultado é $'+resultados+'dolares')
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,66 @@
+Dev Club - css (my dolars)
+
+No Html (digitar html5)
+
+1: colocar em portugues (pt-br)
+2: no head colocar o titulo (my dolars)
+3: ai no body, colocar h1 (my dolars)
+4: fazer uma div, e dentro dela incluir:
+           <input type="number" placeholder="Valor em Reais"/>
+           <input placeholder="Valor do Dolar"/>
+5: colocar uma tag de paragrafo: <p>$ 0</p>
+6: colocar uma tag de botao: <button>Converter</button>
+7: ai logo abaixo da tag body, colocar a tag de imagem
+           <img src="./my-dolar.gif"/>
+8: ai abaixo da tag final de body, vamos incluir a tag de estilo do css no html
+           <style> ai dentro da tag, incluir o estilo da imagem
+                  img { width: 70% }
+9: ai logo abaixo da tag style, incluir o body no estilo
+                                     body {text-align: center; (alinhamento do texto)
+                                           background-color: #323232(preto)(cor de fundo da pagina)
+10:ai vou modificar a tag h1 que e a do titulo:
+           h1 {  color: #cfff00;
+                 font-size: 50px;
+11:ai vou modificar a tag de input que sao dos formularios:
+           input {  width: 140px; (largura)
+                    height: 30px; (altura)
+12:ir nas tags de input para diferenciar elas, colocanco uma id nelas(nao importa a ordem, pode
+                                                                      ser no comeco, meio ou fim)
+          exemplo: <input id="input-real" type="number" .....
+                   <input id="input-dolar"
+13:ai vou no estilo logo abaixo de input, e vou modificar meus input, assim:
+                   #input-real { border: 3px solid #cfff00; 
+                   #input-dolar { border: 3px solid red;
+14:ai vou modificar a tag p (de paragrafo):
+          p { font-weight: bold;
+              font-size: 25px;
+15:ai vou modificar a tag button:
+          button { height: 40px;
+                   width: 150px;
+                   font-size: 20px;
+                   cursor: pointer;
+                   border: 3px solid #cfff00;
+                   border-radius: 10px;
+                   background-color: #323232;
+                   color: white;
+16:ai vou acrecentar o hover no botao(pra qdo eu passar o mouse sobre o botao, ele muda de cor)
+          button:hover { color: #323232;
+                         background-color: #cfff00;
+
+dps a parte 2 colocar o javascript
+
+17:dentro do html abaixo da tag style, vamos acrescentar a tag <script>
+                   <script>
+                     let real = document.getElementByid("input-real").value
+                     let dolar = document.getElementByid("input-dolar").value
+                     let resultado = real / dolar (mostra quando o real vai ser dividido pelo dolar)
+                     alert(resultado) (quando pede pra mostrar na tela)
+18:mais pra continuar preciso criar a function, que vai ser criada logo abaixo da tag script
+                     function calcularDolar() { } ai mandar todo o texto dentro da function
+                                do let ao alert
+19:ai vou subir la na tag do botao, dar espaco e chamar minha funcao pra funcionar
+                   <button onclick="calcularDolar()" >Converter .....
+
+        tarefa: como colocar no alert alem do resultado, a moeda que sai, o cifrao
+                e como sair o resultado em baixo na parte preta
+
